@@ -2,17 +2,18 @@
 class Kopia < Formula
   desc "Fast and secure open source backup."
   homepage "https://kopia.io"
-  version "0.3.0-rc1"
+  version "0.3.0-rc3"
+  bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/kopia/kopia/releases/download/v0.3.0-rc1/kopia-0.3.0-rc1-macOS-x64.tar.gz"
-    sha256 "9dbc7f376251a04abcdc0e9646f3dac3e6ac5a0db5fb9482487a79ab9aef8d8f"
+    url "https://github.com/kopia/kopia/releases/download/v0.3.0-rc3/kopia-0.3.0-rc3-macOS-x64.tar.gz"
+    sha256 "ff2d931f907c5f494c784eb22b792b2a5f7f24995d5f77cead972a67159a4ed5"
   elsif OS.linux?
-    url "https://github.com/kopia/kopia/releases/download/v0.3.0-rc1/kopia-0.3.0-rc1-linux-x64.tar.gz"
-    sha256 "da5c302615d2c68f094abd5f24702d943689bb6004de0ee31dbe443d29945e0f"
+    url "https://github.com/kopia/kopia/releases/download/v0.3.0-rc3/kopia-0.3.0-rc3-linux-x64.tar.gz"
+    sha256 "eb802cd197c7a817630a2ac51769b652ed5b2a7a5ce98ac1c008079fc18e57a1"
   end
 
   def install
-    bin.install "kopia"
+    bin.install "program"
   end
 end
