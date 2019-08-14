@@ -2,16 +2,16 @@
 class Kopia < Formula
   desc "Fast and secure open source backup."
   homepage "https://kopia.io"
-  version "0.3.0-rc4"
+  version "0.3.0-rc5"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/kopia/kopia/releases/download/v0.3.0-rc4/kopia-0.3.0-rc4-macOS-x64.tar.gz"
-    sha256 "54a947f0f7f45507a77168cea1111e2e8c013324e319f2d107a2ea86303c8af4"
+    url "https://github.com/kopia/kopia/releases/download/v0.3.0-rc5/kopia-0.3.0-rc5-macOS-x64.tar.gz"
+    sha256 "396051140fca260741d69993ecdc2625f2f2ee84cbb60e0ac1e9cc57677fef52"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/kopia/kopia/releases/download/v0.3.0-rc4/kopia-0.3.0-rc4-linux-x64.tar.gz"
-      sha256 "5b0a2761e977841977f162d119209ff3333e34f529228f0b1b5b01553d21bbb9"
+      url "https://github.com/kopia/kopia/releases/download/v0.3.0-rc5/kopia-0.3.0-rc5-linux-x64.tar.gz"
+      sha256 "4923b0a70408bbfb1696397c22500db74fba8a6945330c430e330e5893fdb85f"
     end
   end
 
