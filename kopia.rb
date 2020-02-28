@@ -2,24 +2,24 @@
 class Kopia < Formula
   desc "Fast and secure open source backup."
   homepage "https://kopia.io"
-  version "0.4.0"
+  version "0.5.0-test4"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/kopia/kopia/releases/download/v0.4.0/kopia-0.4.0-macOS-x64.tar.gz"
-    sha256 "055d09ca6fd65f93c8d8e9d249bb707184d6e293808fa9d8b7e3fdfd29ff1733"
+    url "https://github.com/kopia/kopia/releases/download/v0.5.0-test4/kopia-0.5.0-test4-macOS-x64.tar.gz"
+    sha256 "535621e523b3b4c67197113676badd483a68977b6e6cf5694032629c26cdc164"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/kopia/kopia/releases/download/v0.4.0/kopia-0.4.0-linux-x64.tar.gz"
-      sha256 "a60719a0f01c0cf39a8fb941d6be9d5cc59838b3fe460661a43547d6158719ec"
+      url "https://github.com/kopia/kopia/releases/download/v0.5.0-test4/kopia-0.5.0-test4-linux-x64.tar.gz"
+      sha256 "ba7500b4834037addb16a88bf7ae918da6fa18bb1f4d419b0ec106033152696e"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kopia/kopia/releases/download/v0.4.0/kopia-0.4.0-linux-arm64.tar.gz"
-        sha256 "9acb880ba157b2774135161c23391d5836ca5fe69121ac988477b9a761182727"
+        url "https://github.com/kopia/kopia/releases/download/v0.5.0-test4/kopia-0.5.0-test4-linux-arm64.tar.gz"
+        sha256 "e9877e38cf4fddac0de38714d4885e477514d9906753c147a1355a6b29b21dbe"
       else
-        url "https://github.com/kopia/kopia/releases/download/v0.4.0/kopia-0.4.0-linux-arm.tar.gz"
-        sha256 "c377dc02f9c1833823fea54d51fd68966b47a3aa23f0a28eec33b413635affae"
+        url "https://github.com/kopia/kopia/releases/download/v0.5.0-test4/kopia-0.5.0-test4-linux-arm.tar.gz"
+        sha256 "e50fd9dadab5806e5a7adbd7f544299ccd2979e4bb9057f75a200a801732deae"
       end
     end
   end
