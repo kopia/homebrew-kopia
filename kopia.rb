@@ -7,19 +7,19 @@ class Kopia < Formula
 
   if OS.mac?
     url "https://github.com/kopia/kopia/releases/download/v0.5.0-test4/kopia-0.5.0-test4-macOS-x64.tar.gz"
-    sha256 "cb49af05f7fbd598e97dd98fb7efc68219895293a68000cc550880620ab34ff8"
+    sha256 "ea722f9097ec66d54d0cee76b922106c76d368152332a706e517634907282ba9"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/kopia/kopia/releases/download/v0.5.0-test4/kopia-0.5.0-test4-linux-x64.tar.gz"
-      sha256 "5389b9e4ce5bc524a31afecb673bf471f1ef7d0fa2530cb8eec12b4359933f32"
+      sha256 "9a81397910107d5c33e644a217680b20ea9d71a8696743591f19799755482eb9"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/kopia/kopia/releases/download/v0.5.0-test4/kopia-0.5.0-test4-linux-arm64.tar.gz"
-        sha256 "4eb1754858297f1ab3baf0f76d67e98c8f2a8691023de28bb220086f7afc00b6"
+        sha256 "f30bb7400f62be0809e5dbaf0930cb920f9081b558616d230cbc958357c10fc6"
       else
         url "https://github.com/kopia/kopia/releases/download/v0.5.0-test4/kopia-0.5.0-test4-linux-arm.tar.gz"
-        sha256 "6417c6e9ac468332bece16bee56eddae3655bae4a9d92c7304be0c3e2f59a4ec"
+        sha256 "b9025bc14c38e7658ea4705150d84aa28e6b07f54d799253ed2eb41440e2a398"
       end
     end
   end
