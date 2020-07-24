@@ -6,20 +6,20 @@ class Kopia < Formula
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/kopia/kopia/releases/download/v0.6.0-rc1/kopia-0.6.0-rc1-macOS-x64.tar.gz"
-    sha256 "1b6f05845ad423b41289a6ef9472d1b057a9f911ba484176245bef7ada263375"
+    url "https://github.com/kopia/kopia/releases/download/0.6.0-rc1/kopia-0.6.0-rc1-macOS-x64.tar.gz"
+    sha256 "b97dfc656fff0778e25dd77b26018bc3f62b65ebf1ecfbd76cd9eef20ef14fe2"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/kopia/kopia/releases/download/v0.6.0-rc1/kopia-0.6.0-rc1-linux-x64.tar.gz"
-      sha256 "74fd0aea9ef2557cb63e9024c4bec8c60975877cf50aa7d77c44e1bc4c4a8392"
+      url "https://github.com/kopia/kopia/releases/download/0.6.0-rc1/kopia-0.6.0-rc1-linux-x64.tar.gz"
+      sha256 "cab717dcb8928f5531b54a6ced62e75a602a846d23dc9b79dc5e346c132b3f5c"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kopia/kopia/releases/download/v0.6.0-rc1/kopia-0.6.0-rc1-linux-arm64.tar.gz"
-        sha256 "d85e72afc64792429a5c3bef1dd4fd478fb3abdb6bd4e979eafe4e9a69f86360"
+        url "https://github.com/kopia/kopia/releases/download/0.6.0-rc1/kopia-0.6.0-rc1-linux-arm64.tar.gz"
+        sha256 "0371c1a811c44a1438b09f9a9bbd8cda0bbc9ad0e7c6236dadf4cc0f9b20bd4c"
       else
-        url "https://github.com/kopia/kopia/releases/download/v0.6.0-rc1/kopia-0.6.0-rc1-linux-arm.tar.gz"
-        sha256 "b4e20176a667d8a7d0dc60d3d5b88f04910a4e2d02fc621eea802efa502ae7bd"
+        url "https://github.com/kopia/kopia/releases/download/0.6.0-rc1/kopia-0.6.0-rc1-linux-arm.tar.gz"
+        sha256 "68968e6fa3237e0744a0d9842b8038418cb9a26c0d517f079147bf8db5471b52"
       end
     end
   end
