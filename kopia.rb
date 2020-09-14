@@ -7,19 +7,19 @@ class Kopia < Formula
 
   if OS.mac?
     url "https://github.com/kopia/kopia/releases/download/v0.7.0-rc1/kopia-0.7.0-rc1-macOS-x64.tar.gz"
-    sha256 "f9e89663c6a7b24809505519ca45950312444ee4911ec707e4ac941d3d8ba4f3"
+    sha256 "4ada6f075300d7f7b210ccf38c57078ccd1de082ab6cb88899ee74c31dedfd9a"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/kopia/kopia/releases/download/v0.7.0-rc1/kopia-0.7.0-rc1-linux-x64.tar.gz"
-      sha256 "77297cf7887bf2e5a501b353a392270c1045b2918d954338e1688d131606f0ec"
+      sha256 "f0222df5438e8224c43b15aafa4c28563774314cb0fa2e8c37b99317bf5d010a"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/kopia/kopia/releases/download/v0.7.0-rc1/kopia-0.7.0-rc1-linux-arm64.tar.gz"
-        sha256 "68a3491cce1c355a47708a5d70707325f8bb34c338a2d5faf5109e50c4a714c5"
+        sha256 "4a843f2c8f22bbd2472872415656c450839b57802f7a72ae1541d0fe5dbc3ce0"
       else
         url "https://github.com/kopia/kopia/releases/download/v0.7.0-rc1/kopia-0.7.0-rc1-linux-arm.tar.gz"
-        sha256 "77222e86c427771e03084273749525ef6b861dc3d81694aba4d2460310c0ecb6"
+        sha256 "ebfb72105cdfc6a0bedd93d7f3c4513539c8603bfe794ca58357f67229d52e13"
       end
     end
   end
