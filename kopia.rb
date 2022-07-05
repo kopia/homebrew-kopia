@@ -4,27 +4,27 @@
 class Kopia < Formula
   desc "Fast and secure open source backup."
   homepage "https://kopia.io"
-  version "0.11.0"
+  version "0.11.1"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/kopia/kopia/releases/download/v0.11.0/kopia-0.11.0-macOS-x64.tar.gz"
-    sha256 "0f5653873cafb4e5c978ff986c8753da627fc898e9d4a2f0a8b5c4fcd21b8882"
+    url "https://github.com/kopia/kopia/releases/download/v0.11.1/kopia-0.11.1-macOS-x64.tar.gz"
+    sha256 "cf96f790c02dcbb596f0cd3db4a42667924a240c94e2e24d02f68a42c024ef3b"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/kopia/kopia/releases/download/v0.11.0/kopia-0.11.0-macOS-arm64.tar.gz"
-    sha256 "27b0757ca7de31eaf1eafd26ed13742fe02d6be20bac3293e72d3c3f54c7934f"
+    url "https://github.com/kopia/kopia/releases/download/v0.11.1/kopia-0.11.1-macOS-arm64.tar.gz"
+    sha256 "9d450553e6e42f55609d919351e36e407e782c119ec7f05a9925ffc2910bccb3"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/kopia/kopia/releases/download/v0.11.0/kopia-0.11.0-linux-x64.tar.gz"
-    sha256 "2a6bbd3f27b7d14178a9ea8f9176d568f07f0ed91ae4911a3d81b78b2c2d8317"
+    url "https://github.com/kopia/kopia/releases/download/v0.11.1/kopia-0.11.1-linux-x64.tar.gz"
+    sha256 "4c08b954f476c852a5d1e74438ae742862de8ed2dd9f13771d94adaab3155159"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/kopia/kopia/releases/download/v0.11.0/kopia-0.11.0-linux-arm.tar.gz"
-    sha256 "f18be42903680974e41ced1cec76c55b42b47abf734f0b4fd65e5a3e658e1f28"
+    url "https://github.com/kopia/kopia/releases/download/v0.11.1/kopia-0.11.1-linux-arm.tar.gz"
+    sha256 "c71b746659d4908ecb0e5321035b2b3af00dbc8867731b448d9319b0587b43c1"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/kopia/kopia/releases/download/v0.11.0/kopia-0.11.0-linux-arm64.tar.gz"
-    sha256 "0b75a790d271181e1b79697a5a650b45f97840447e58008d9280eca23c25712d"
+    url "https://github.com/kopia/kopia/releases/download/v0.11.1/kopia-0.11.1-linux-arm64.tar.gz"
+    sha256 "cb70a968f6fa2f7699fde5954415fb2ab929994457c09a6d9007349d575308c7"
   end
 
   def install
